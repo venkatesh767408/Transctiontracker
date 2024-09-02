@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Tracker</title>
+    <link rel="Stylesheet" href="Room.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Transaction Tracker</h1>
+        <div class="form-group">
+            <label for="initialAmount">Initial Amount:</label>
+            <input type="number" id="initialAmount" placeholder="Enter initial amount">
+        </div>
+        <div class="form-group">
+            <label for="transactionDate">Select Date:</label>
+            <input type="date" id="transactionDate">
+        </div>
+        <div class="form-group">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount">
+        </div>
+        <div class="form-group">
+            <button id="creditBtn">Credit</button>
+            <button id="debitBtn">Debit</button>
+        </div>
+        <h2>Total Amount: <span id="totalAmount">0</span></h2>
+        <h2>Transaction History</h2>
+        <ul id="transactionList"></ul>
+    </div>
+    <script src="Room.js"></script>
+</body>
+</html>
